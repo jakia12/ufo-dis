@@ -9,6 +9,21 @@
 	<title>UFO Disclosure</title>
 
 	<link href="./_app/immutable/assets/0.2d80a645.css" rel="stylesheet">
+	<style>
+		.footage-div{
+			display: flex;
+			justify-content: space-around;
+			gap: 10px;
+			align-items: center;
+		}
+
+
+		@media screen and (max-width: 768px) {
+			.footage-div{
+				flex-direction: column;
+			}
+		}
+	</style>
 </head>
 
 <body data-sveltekit-preload-data="hover">
@@ -72,6 +87,12 @@
 						alt=""></div>
 			</div>
 		</div>
+		<div style="padding: 10px;">
+			<center>
+				<h1 style="margin: 30px 0;">UFO DISCLOSURE</h1>
+				<video autoplay loop controls style="width: 95%; max-width: 98%; border-radius: 7px;" src="./us-navy.mp4"></video>
+			</center>
+		</div>
 		<div id="tokenomics"
 			class="flex flex-col justify-center items-center text-center min-h-screen p-10 bg-gradient-to-b from-base-300 to-transparent relative"
 			data-svelte-h="svelte-tnjmf7"><img src="space.jpg"
@@ -104,6 +125,16 @@
 				</div>
 			</div>
 		</div>
+		<section>
+			<center>
+				<h1>UFO FOOTAGES</h1>
+				<div class="footage-div">
+					<img style="width: 400px; max-width: 100%;" src="./ufo2.webp" alt="">
+					<video style="width: 400px; max-width: 100%;" autoplay loop controls muted src="./UFO-vid.mp4"></video>
+					<img style="width: 400px; max-width: 100%;" src="./ufo.jpg" alt="">
+				</div>
+			</center>
+		</section>
 		<footer class="footer footer-center p-4 bg-base-300 text-base-content" data-svelte-h="svelte-l3aunc">
 			<aside>
 				<p>Copyright © 2023 - All right reserved by UFO DISCLOSURE Team</p>
